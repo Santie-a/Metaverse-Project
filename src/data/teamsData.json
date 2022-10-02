@@ -3,36 +3,84 @@
         "img": "http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/1.png",
         "name": "Real Madrid",
         "selected": false,
-        "id": "1"
+        "id": "1",
+        "price": 450
     },
     {
         "img": "http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/3.png",
         "name": "Barcelona",
         "selected": false,        
-        "id": "2"
+        "id": "2",
+        "price": 440
     },
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png",
         "name": "Bayern Munich",
         "selected": false,        
-        "id": "3"
+        "id": "3",
+        "price": 410
     },
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/f/f0/ParisSG.png",
         "name": "PSG",
         "selected": false,        
-        "id": "4"
+        "id": "4",
+        "price": 450
     },
     {
         "img": "http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/65.png",
         "name": "Liverpool",
         "selected": false,        
-        "id": "5"
+        "id": "5",
+        "price": 420
     },
     {
         "img": "http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/72.png",
         "name": "Tottenham Hotspur",
         "selected": false,        
-        "id": "6"
+        "id": "6",
+        "price": 410
+    },
+    {
+        "img": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/66.png",
+        "name": "Manchester City",
+        "selected": false,        
+        "id": "7",
+        "price": 450
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/800px-Manchester_United_FC_crest.svg.png",
+        "name": "Manchester United",
+        "selected": false,        
+        "id": "8",
+        "price": 430
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg",
+        "name": "Borussia Dortmund",
+        "selected": false,        
+        "id": "9",
+        "price": 420
+    },
+    {
+        "img": "http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/22.png",
+        "name": "AC Milan",
+        "selected": false,        
+        "id": "10",
+        "price": 410
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flamengo_braz_logo.svg/1200px-Flamengo_braz_logo.svg.png",
+        "name": "Flamengo",
+        "selected": false,        
+        "id": "11",
+        "price": 390
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/CABJ70.png/640px-CABJ70.png",
+        "name": "Boca Juniors",
+        "selected": false,        
+        "id": "12",
+        "price": 350
     }
 ]
