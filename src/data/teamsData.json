@@ -61,26 +61,5 @@
         "selected": false,        
         "id": "9",
         "price": 420
-    },
-    {
-        "img": "http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/22.png",
-        "name": "AC Milan",
-        "selected": false,        
-        "id": "10",
-        "price": 410
-    },
-    {
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flamengo_braz_logo.svg/1200px-Flamengo_braz_logo.svg.png",
-        "name": "Flamengo",
-        "selected": false,        
-        "id": "11",
-        "price": 390
-    },
-    {
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/CABJ70.png/640px-CABJ70.png",
-        "name": "Boca Juniors",
-        "selected": false,        
-        "id": "12",
-        "price": 350
     }
 ]

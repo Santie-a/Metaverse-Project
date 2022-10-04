@@ -548,6 +548,9 @@ video {
 .h-8 {
   height: 2rem;
 }
+.h-12 {
+  height: 3rem;
+}
 .h-auto {
   height: auto;
 }
