@@ -1,7 +1,6 @@
-import { useEffect, useContext, useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Team from "../components/Team";
-import UserContext from "../context/user";
 import teamsData from "../data/teamsData.json"
 
 export default function BuyNFT() {
@@ -9,12 +8,9 @@ export default function BuyNFT() {
     const [ selection, setSelection ] = useState("")
     const [ teams, setTeams ] = useState(teamsData)
     const [ finalTeam, setFinalTeam ] = useState("")
-    
-    const { user } = useContext(UserContext)
-    const [ isInvalid, setisInvalid ] = useState(user ? (false) : (true) || selection === "")
 
     useEffect(() => {
-        document.title = 'Metaverse Project - Buy NFT'
+        document.title = 'Metaverse Project - Select Team'
     }, [])
 
     function toggle(id) {
@@ -42,7 +38,6 @@ export default function BuyNFT() {
         } else { 
             processBuy()
             setError("")
-            setisInvalid(true)
         }
     }
 
@@ -64,11 +59,11 @@ export default function BuyNFT() {
             <Header />
             {finalTeam &&
                 <div className="container bg-white mt-2 mb-2 flex mx-auto max-w-screen-md justify-center items-center h-auto flex-col border border-gray-primary rounded p-5 shadow-inner">
-                    <div className="flex p-4 border border-gray-primary rounded shadow-inner">
-                        <h1 className="text-2xl font-bold text-gray-base">Team selected!</h1>
+                    <div className="flex p-4">
+                        <h1 className="text-2xl font-bold">TEAM SELECTED!</h1>
                     </div>
                     <div className="flex m-2 p-2 items-center justify-center">
-                        <div className="m-2 p-5 w-6/12 border border-gray-primary rounded shadow-inner">
+                        <div className="m-2 p-5 w-6/12">
                             <img
                                 src={teams[finalTeam - 1].img}
                                 alt="Shield"
@@ -78,7 +73,7 @@ export default function BuyNFT() {
                         <div className="flex flex-col w-6/12 shadow-inner text-center items-center justify-center m-2 p-5 border border-gray-primary rounded">
                             <h1 className="text-2xl font-bold">Team</h1>
                             <p className="text-2xl justify-center text-gray-base mt-2 mb-2">{teams[finalTeam - 1].name}</p>
-                            <p className="text-xl">Now you have your own team! Go to the auction section.</p>
+                            <p className="text-xl">Now you have your own team! Go to the NFT creation / Auction section.</p>
                         </div>
                     </div>
                 </div>
@@ -90,16 +85,14 @@ export default function BuyNFT() {
                 <div className="grid grid-cols-3 grid-flow-row">
                     {teamsRender}
                 </div>
-                {error && <p className="m-2 text-xs text-red-primary">Error: {error}</p>}
+                {error && <p className="m-2 text-xs text-red-primary">{error}</p>}
                 <button
                     className={
-                    `m-2 bg-blue-medium text-white w-8/12 rounded h-12 font-medium ease-in duration-300
-                    ${isInvalid && ' opacity-50'} ${!isInvalid && ' cursor-pointer'}`
+                    `m-2 bg-blue-medium text-white w-8/12 rounded h-12 font-medium ease-in duration-300 cursor-pointer`
                     }
-                    disabled={isInvalid}
                     onClick={handleBuy}
                 >
-                    Buy NFT
+                    Select Team
                 </button>
             </div>
             
